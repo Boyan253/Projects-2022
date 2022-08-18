@@ -1,0 +1,124 @@
+/* set sizing to border box method */
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+/* set maximum and minimum widths for the body and centre within the viewport */
+body {
+background-color: Gray;
+font-family: Robotic;
+margin-left: auto;
+margin-right: auto;
+max-width: 1024px;
+min-width: 256px;
+padding-top: 8px;
+padding-bottom: 24px;
+padding-left: 24px;
+padding-right: 24px;
+}
+/* add a fancy background */
+html {
+background: radial-gradient(circle, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
+background-size: 8px 8px;
+}
+/* header */
+header{
+}
+header p {
+float: left;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+}
+header h1 {
+font-size: 16px;
+text-align: right;
+}
+/* the menu */
+nav ul {
+list-style-type: none;
+background-color: #B577B5;
+border: 2px solid Black;
+border-radius: 10px;
+font-family: sans-serif;
+font-weight: bold;
+padding: 16px;
+}
+nav ul li {
+display: inline;
+border-right: 2px solid #111111;
+padding-right: 8px;
+padding-left: 8px;
+}
+nav ul li:last-child {
+border-right: none;
+}
+nav ul li a {
+text-decoration: none;
+color: #111111;
+}
+nav li.selected{
+color: #606060;
+}
+nav ul li a:hover {
+text-decoration: underline;
+}
+/* biographies */
+section {
+background-color: #FFFFFF;
+margin-bottom: 24px;
+min-height: 320px;
+padding-left: 24px;
+padding-right: 24px;
+}
+/* the aside */
+aside {
+}
+/* footer */
+footer {
+}
+footer p.copyright {
+float: left;
+margin-top: 0px;
+}
+footer p.contact {
+text-align: right;
+}
+/* small images are set to 200px in height */
+img.small {
+float: left;
+height: 200px;
+margin-bottom: 24px;
+margin-right: 24px;
+}
+/* medium images can be 50% of the container element’s width, up to 360px */
+img.medium {
+max-width: 360px;
+width: 50%;
+}
+/* large images are 100% of the container element’s width */
+img.large {
+width: 100%;
+}
+/* add the same style of border to the elements which are to have borders */
+body, section, img {
+border: 2px solid #B1B1B1;
+border-radius: 16px;
+}
+/* the bits that are specific to a wide viewport (over 56em) */
+@media all and (min-width: 900px) {
+article {
+float: left;
+width: 66%;
+}
+aside {
+float: left;
+padding-left: 24px;
+width: 34%;
+}
+footer {
+clear: both;
+}
+}
